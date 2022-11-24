@@ -4,7 +4,9 @@ app = Flask(__name__)
 
 
 def get_html_data():
-    return """<h2>Hello, World!</h2>"""
+    return """<div style="display: flex;
+    justify-content: center;
+    align-items: center;"><h2>Hello, World!</h2></div>"""
 
 
 @app.route("/")
