@@ -1,6 +1,6 @@
 .PHONY: run
 run:
-	flask --app main run
+	flask --app main run --host=0.0.0.0
 
 .PHONY: lint
 lint:
