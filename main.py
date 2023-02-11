@@ -12,7 +12,9 @@ def new_div_block(data):
 
 
 def get_html_data():
-    return """<h2>Hello, World!</h2>"""
+    return """<div style="display: flex;
+    justify-content: center;
+    align-items: center;"><h2>Hello, World!</h2></div>"""
 
 
 def make_chat():
