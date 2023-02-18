@@ -22,3 +22,11 @@ coverage:
 .PHONY: gen-local-cert
 gen-local-cert:
     openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
+
+.PHONY: docker-build
+docker-build:
+	docker build -t my-app .
+
+.PHONY: docker-run
+docker-run:
+	docker run -p 5000:5000 -t my-app

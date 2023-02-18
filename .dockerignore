@@ -1,0 +1,10 @@
+venv
+__pycache__/
+*.png
+deploy/
+.git
+.gitignore
+.env.example
+README.md
+Dockerfile
+.vscode
